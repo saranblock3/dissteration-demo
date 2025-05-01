@@ -24,8 +24,8 @@ func main() {
 	// Write to a remote application by specifying the content, address, and id
 	err = homaSocket.SendTo(
 		[]byte("Hello, World!"), // Content
-		"130.127.133.84",        // Source address
-		"130.127.133.67",        // Destination address
+		"10.10.1.1",             // Source address
+		"10.10.1.2",             // Destination address
 		8080,                    // Destination ID
 	)
 	if err != nil {
